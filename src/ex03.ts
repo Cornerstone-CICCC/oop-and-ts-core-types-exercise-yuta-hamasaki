@@ -5,7 +5,7 @@
 function logValues(values: any[]){
   for(let i = 0; i < values.length; i++){
     let type = typeof values[i]
-    console.log(`${values[i]}(${type})`)
+    console.log(`${JSON.stringify(values[i])} (${type})`)
   }
 }
 

@@ -4,7 +4,7 @@
 function logValues(values) {
     for (let i = 0; i < values.length; i++) {
         let type = typeof values[i];
-        console.log(`${values[i]}(${type})`);
+        console.log(`${JSON.stringify(values[i])} (${type})`);
     }
 }
 logValues([42, "Hello", true, { name: "Alice" }]);
